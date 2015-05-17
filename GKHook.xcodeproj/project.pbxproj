@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A9821E5157D0C0D00BCAD19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9821E4157D0C0D00BCAD19 /* Foundation.framework */; };
+		6A9821EF157D0C0D00BCAD19 /* GKHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A9821EE157D0C0D00BCAD19 /* GKHook.mm */; };
+		6A9821FA157D0CC800BCAD19 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9821F9157D0CC800BCAD19 /* GameKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A9821E1157D0C0D00BCAD19 /* GKHook.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = GKHook.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9821E4157D0C0D00BCAD19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A9821E9157D0C0D00BCAD19 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		6A9821EA157D0C0D00BCAD19 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		6A9821EC157D0C0D00BCAD19 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		6A9821ED157D0C0D00BCAD19 /* GKHook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKHook-Prefix.pch"; sourceTree = "<group>"; };
+		6A9821EE157D0C0D00BCAD19 /* GKHook.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GKHook.mm; sourceTree = "<group>"; };
+		6A9821F3157D0C0D00BCAD19 /* GKHook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = GKHook.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/GKHook.plist; sourceTree = "<group>"; };
+		6A9821F9157D0CC800BCAD19 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A9821DD157D0C0D00BCAD19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9821FA157D0CC800BCAD19 /* GameKit.framework in Frameworks */,
+				6A9821E5157D0C0D00BCAD19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A9821D5157D0C0C00BCAD19 = {
+			isa = PBXGroup;
+			children = (
+				6A9821F9157D0CC800BCAD19 /* GameKit.framework */,
+				6A9821E6157D0C0D00BCAD19 /* GKHook */,
+				6A9821E3157D0C0D00BCAD19 /* Frameworks */,
+				6A9821E2157D0C0D00BCAD19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A9821E2157D0C0D00BCAD19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821E1157D0C0D00BCAD19 /* GKHook.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A9821E3157D0C0D00BCAD19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821E4157D0C0D00BCAD19 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A9821E6157D0C0D00BCAD19 /* GKHook */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821EE157D0C0D00BCAD19 /* GKHook.mm */,
+				6A9821E7157D0C0D00BCAD19 /* Package */,
+				6A9821EB157D0C0D00BCAD19 /* Supporting Files */,
+			);
+			path = GKHook;
+			sourceTree = "<group>";
+		};
+		6A9821E7157D0C0D00BCAD19 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821E8157D0C0D00BCAD19 /* DEBIAN */,
+				6A9821F0157D0C0D00BCAD19 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		6A9821E8157D0C0D00BCAD19 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821E9157D0C0D00BCAD19 /* control.txt */,
+				6A9821EA157D0C0D00BCAD19 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		6A9821EB157D0C0D00BCAD19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821EC157D0C0D00BCAD19 /* PackageVersion.plist */,
+				6A9821ED157D0C0D00BCAD19 /* GKHook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A9821F0157D0C0D00BCAD19 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821F1157D0C0D00BCAD19 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		6A9821F1157D0C0D00BCAD19 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821F2157D0C0D00BCAD19 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		6A9821F2157D0C0D00BCAD19 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				6A9821F3157D0C0D00BCAD19 /* GKHook.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6A9821DE157D0C0D00BCAD19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6A9821E0157D0C0D00BCAD19 /* GKHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9821F6157D0C0D00BCAD19 /* Build configuration list for PBXNativeTarget "GKHook" */;
+			buildPhases = (
+				6A9821DC157D0C0D00BCAD19 /* Sources */,
+				6A9821DD157D0C0D00BCAD19 /* Frameworks */,
+				6A9821DE157D0C0D00BCAD19 /* Headers */,
+				6A9821DF157D0C0D00BCAD19 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKHook;
+			productName = GKHook;
+			productReference = 6A9821E1157D0C0D00BCAD19 /* GKHook.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A9821D7157D0C0C00BCAD19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 6A9821DA157D0C0C00BCAD19 /* Build configuration list for PBXProject "GKHook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A9821D5157D0C0C00BCAD19;
+			productRefGroup = 6A9821E2157D0C0D00BCAD19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A9821E0157D0C0D00BCAD19 /* GKHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A9821DF157D0C0D00BCAD19 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A9821DC157D0C0D00BCAD19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9821EF157D0C0D00BCAD19 /* GKHook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A9821F4157D0C0D00BCAD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		6A9821F5157D0C0D00BCAD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "$(iOSOpenDevPath)/frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		6A9821F7157D0C0D00BCAD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GKHook/GKHook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 192.168.0.100;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		6A9821F8157D0C0D00BCAD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GKHook/GKHook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevCopyOnBuild = YES;
+				iOSOpenDevDevice = 192.168.0.100;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A9821DA157D0C0C00BCAD19 /* Build configuration list for PBXProject "GKHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9821F4157D0C0D00BCAD19 /* Release */,
+				6A9821F5157D0C0D00BCAD19 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9821F6157D0C0D00BCAD19 /* Build configuration list for PBXNativeTarget "GKHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9821F7157D0C0D00BCAD19 /* Release */,
+				6A9821F8157D0C0D00BCAD19 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A9821D7157D0C0C00BCAD19 /* Project object */;
+}
